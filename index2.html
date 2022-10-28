@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors game</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="head-container">
+        <div class="title-container">
+            <h1>choose your weapon!</h1>
+        </div>
+        <div class="your-container">
+            <img src="images/paper.webp" alt="" class='your-img' data-type="paper" data-id="paper_y">
+            <img src="images/rock.webp" alt="" class='your-img' data-type="rock" data-id="rock_y">
+            <img src="images/scissors.webp" alt="" class='your-img' data-type="scissors" data-id="scissors_y">
+        </div>
+        <div class="computer-container" disabled="true">
+            <img src="images/paper.webp" alt="" class='computer-img' data-type="paper" data-id="paper_c" disabled="true">
+            <img src="images/rock.webp" alt="" class='computer-img' data-type="rock" data-id="rock_c">
+            <img src="images/scissors.webp" alt="" class='computer-img' data-type="scissors" data-id="scissors_c">
+        </div>
+        <div class="result-container">
+            <div class="your-result-container">
+                <h2 class="your-result">you: 0</h2>
+            </div>
+            <div class="computer-result-container">
+                <h2 class="computer-result">computer: 0</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="end-game-container inactive">
+        <h1 class="end-game-title"></h1>
+        <div class="btns-container">
+            <button class="reset-btn">reset game!</button>
+            <button class="back-btn"><a href="index.html">back to menu!</a></button>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
